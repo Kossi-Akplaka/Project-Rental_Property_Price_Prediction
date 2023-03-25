@@ -1,7 +1,7 @@
 # Rental Property Price Prediction/ Dashboard: Project Overview
 *  Utilized statistical techniques and machine learning algorithms in Python (e.g. Linear Regression, Random Forest regressor, Decision Tree Regressor) to build predictive models for rental property prices based on current data.
 * Performed exploratory data analysis by exploring the features and the relationship between those features.
-* Engineered features and used hyperparameter tunning to reach the best model.
+* Engineered features and used hyperparameter tuning to reach the best model.
 * Utilized Power Bi to design interactive visualizations and reports.
 
 
