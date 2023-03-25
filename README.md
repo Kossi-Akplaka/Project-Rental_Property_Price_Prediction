@@ -3,7 +3,7 @@
 * Performed exploratory data analysis by exploring the features and the relationship between those features.
 * Engineered features and used hyperparameter tunning to reach the best model.
 * Utilized Power Bi to design interactive visualizations and reports.
- ![Sqfeet Distribution](sqfeet_distribution.png)
+ ![Sqfeet Distribution](Report.pdf)
 
 ## Data and packages
 * Data: https://www.kaggle.com/datasets/austinreese/usa-housing-listings
