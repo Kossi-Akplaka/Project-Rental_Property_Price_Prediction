@@ -3,6 +3,7 @@
 * Performed exploratory data analysis by exploring the features and the relationship between those features.
 * Engineered features and used hyperparameter tunning to reach the best model.
 * Utilized Power Bi to design interactive visualizations and reports.
+ ![Sqfeet Distribution](sqfeet_distribution.png)
 
 ## Data and packages
 * Data: https://www.kaggle.com/datasets/austinreese/usa-housing-listings
@@ -26,12 +27,19 @@
 ## Feature understanding
 ### I looked at the distributions of the data for various features.
 
-  ![Price Distribution](price_distribution.png)
   ![Sqfeet Distribution](sqfeet_distribution.png)
 
   
   
-##Feature relationship
+## Feature relationship
+# Visualisation with Power Bi
+### Table data
+* Table 1: https://www.kaggle.com/datasets/austinreese/usa-housing-listings
+* Table 2: https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_
+### Visualisation
+* Used the Power Query Editor to transform, analyse, and clean the data
+* Used Model View to join two tables
+* Used Report View to plot charts, tables, and maps and to implement filters, slicers, and drill-throughs 
   
  
  # Model Building
