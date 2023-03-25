@@ -1,44 +1,48 @@
-# Project-Rental_Property_Price_Prediction
-# Product Demand Forecasting: Project Overview
-* Utilized Python and time series techniques to forecast product demand
-* Performed exploratory data analysis by exploring the features and the relationship between those features
-* Engineered features and used hyperparameter tunning to reach the best model 
+# Rental Property Price Prediction: Project Overview
+*  Utilized statistical techniques and machine learning algorithms in Python (e.g. Linear Regression, Random Forest regressor, Decision Tree Regressor) to build predictive models for rental property prices based on current data.
+* Performed exploratory data analysis by exploring the features and the relationship between those features.
+* Engineered features and used hyperparameter tunning to reach the best model.
+* Utilized Power Bi to design interactive visualizations and reports.
 
 ## Data and packages
-* Data: https://www.kaggle.com/datasets/felixzhao/productdemandforecasting
+* Data: https://www.kaggle.com/datasets/austinreese/usa-housing-listings
 * Packages: Pandas, Numpy, Matplotlib, Seaborn, Pickle
 
 ## Initial Features
-* Product Code
-* Warehouse
-* Product Category
-* Order Date
-* Order Demand
-
-# Univariate analysis
-### I looked at the distributions of the data for various categorical and continuous variables. Below are a few highlights.
-
-  ![Warehouse Count](Warehouse_count.png)
-  ![Category Count](Category_count.png)
-
-  
-  
-# Bivariate/ Multivariate Analysis
- ![Demand per Warehouse](Demand_per_warehouse.png)
- ![Average Demand per Warehouse](Average_demand_per_warehouse.png)
+       * 'id', 'url', 'region', 'region_url', 'price', 'type', 'sqfeet', 'beds',
+       * 'baths', 'cats_allowed', 'dogs_allowed', 'smoking_allowed',
+       * 'wheelchair_access', 'electric_vehicle_charge', 'comes_furnished',
+       * 'laundry_options', 'parking_options', 'image_url', 'description', 'lat',
+       * 'long', 'state'
+       
+ ## Data Cleaning
+ * Check for missing values
+ * Check for the data types
+ * Drop features that don't impact the target variable
+ * Dimensionality reduction
+ * Outliers removal
  
+
+## Feature understanding
+### I looked at the distributions of the data for various features.
+
+  ![Price Distribution](price_distribution.png)
+  ![Sqfeet Distribution](sqfeet_distribution.png)
+
+  
+  
+##Feature relationship
+  
  
  # Model Building
- ### Created new features 'day_of_the_week', 'Quarter',' Month', 'Year', and 'Week' from the date columns
- ### Split the data between features and target variable 'Demand'
- ### Tried 3 different models:
- ## XGboost:  Sequentially built shallow decision trees to provide accurate results and a highly scalable training method that avoids overfitting.
- ## Arima: Capture trends in the data and forecasting 
- ## Sarima: Capture the seasonality in the data
+ ### Label Encoding with OneHotEncoding
+ ### Split the data between features and target variable 'Price'
+ ###Tuned hyperparameters and evaluated model performance using the R-squared as a metric:
  
- # Model performance: the SARIMA model outperformed the other models on the test and validation sets
- ### XGboost:  RMSE = 30754.97
- ### Arima: RMSE = 387.30
- ### Sarima: RMSE = 309.61
+ 
+ # Model performance: the Decision Tree regressor model outperformed the linear regression model models on the test and validation sets
+ ### Linear Regression:  R^2 = 74%
+ ### Decision Tree Regressor: R^2 = 82%
+ 
  
  # Saved the model with Pickle for future use
