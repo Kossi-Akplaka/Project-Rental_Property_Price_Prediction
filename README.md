@@ -37,11 +37,11 @@
   
   
 ## Feature relationship
-# Visualisation with Power Bi
+# Power Bi
 ### Table data
 * Table 1: https://www.kaggle.com/datasets/austinreese/usa-housing-listings
 * Table 2: https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_
-### Visualisation
+### Visualization
 * Used the Power Query Editor to transform, analyse, and clean the data
 * Used Model View to join two tables
 * Used Report View to plot charts, tables, and maps and to implement filters, slicers, and drill-throughs 
